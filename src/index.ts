@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import { WebSearchAgent } from './agent';
+import { WebSearchAgent } from './agent.js';
 import * as readline from 'readline';
 
 dotenv.config();

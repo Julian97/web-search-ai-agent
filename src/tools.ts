@@ -1,5 +1,5 @@
 import { Tool } from '@langchain/core/tools';
-import { BrightDataScraper } from './scraper';
+import { BrightDataScraper } from './tools/scraper.js';
 
 export class WebSearchTool extends Tool {
   name = 'web_search';

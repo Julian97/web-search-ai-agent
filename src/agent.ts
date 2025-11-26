@@ -1,6 +1,6 @@
-import { NosanaLLM } from './llm';
-import { WebSearchTool } from './tools';
-import { BrightDataScraper } from './Tools/scraper';
+import { NosanaLLM } from './llm.js';
+import { WebSearchTool } from './tools.js';
+import { BrightDataScraper } from './tools/scraper.js';
 
 export class WebSearchAgent {
   private llm: NosanaLLM;

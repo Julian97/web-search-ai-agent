@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import path from 'path';
-import { WebSearchAgent } from './agent';
+import { WebSearchAgent } from './agent.js';
 
 dotenv.config();
 
@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(process.cwd(), 'public')));
 
 // Initialize the agent
 const nosanaUrl = process.env.NOSANA_OLLAMA_URL;
@@ -44,7 +44,7 @@ app.post('/api/query', async (req, res) => {
 
 // Serve the frontend
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'));
+  res.sendFile(path.join(process.cwd(), 'public/index.html'));
 });
 
 app.listen(PORT, () => {
