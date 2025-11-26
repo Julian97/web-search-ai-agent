@@ -1,0 +1,26 @@
+{
+  "name": "web-search-ai-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "distindex.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@langchain/core": "^1.1.0",
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "langchain": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
