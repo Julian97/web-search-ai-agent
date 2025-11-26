@@ -2,9 +2,9 @@
   "name": "web-search-ai-agent",
   "version": "1.0.0",
   "description": "",
-  "main": "distindex.js",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "tsx src/index.html",
+    "dev": "tsx src/server.ts",
     "build": "tsc",
     "start": "node dist/index.js"
   },
